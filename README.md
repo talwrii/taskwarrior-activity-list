@@ -1,18 +1,22 @@
-# taskwarrior_activity_list
+# taskwarrior activity list
 
-Stores details of when you start and stop activities in annotations.
-Parses these activities to produce an activity list
+An extension to taskwarrior which stores the details of when
+you start and stop activities in annotations.
+
+Provides a utility `twdisplay.py` to output summaries of
+activities
 
 # Usage
 
 - Ensure you have a taskwarrior with version 2.4 or more recent
 - Attach the hook
 
-        ln -sf full_path_to/taskwarrior_activity_list.py ~/.task/hooks/on_modify.tal
+        ln -sf full_path_to/hook.py ~/.task/hooks/on_modify.tal
 
 - Run the twdisplay utility to summarise output
-
         twdisplay.py --format csv [filter]
+
+- Add things to your path as appropriate
 
 # Caveats
 
