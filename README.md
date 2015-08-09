@@ -14,6 +14,7 @@ activities
         ln -sf full_path_to/hook.py ~/.task/hooks/on_modify.tal
 
 - Run the twdisplay utility to summarise output
+
         twdisplay.py --format csv [filter]
 
 - Add things to your path as appropriate
